@@ -255,7 +255,23 @@ This repository uses [GitHub Actions](https://github.com/features/actions) to au
 - You can manually trigger the suite at any time from the “Actions” tab in GitHub.
 - Downloadable test reports are available in the build’s “Artifacts” section after each run.
 
-**This ensures your test automation remains robust, monitored, and easily accessible for your team and stakeholders.**
+### Viewing Mochawesome Reports in GitHub Actions
+After each scheduled or manual run of the Cypress E2E suite using GitHub Actions, the full Mochawesome HTML report is generated and uploaded as a workflow artifact.
+
+How to Download and View the Report
+Go to the Actions tab of this repository.
+
+Select the latest workflow run (e.g., "Cypress Weekly E2E Suite").
+
+In the summary page, scroll down to the Artifacts section.
+
+Download the artifact named mochawesome-reports.
+
+Extract the downloaded ZIP file.
+
+Open the index.html file inside the extracted folder to view the complete Mochawesome HTML report.
+
+Note: The report includes results for all Cypress E2E specs executed in that workflow run.
 ---
 
 ## 💡 Useful Tips
