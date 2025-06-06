@@ -1,3 +1,5 @@
+![Cypress Weekly E2E Suite](https://github.com/afishingday/LuisMAutomationChallenge/actions/workflows/cypress-weekly.yml/badge.svg)
+
 # LuisMAutomationChallenge – Cypress E2E Automation for Laboratorio de Testing
 
 ---
@@ -240,7 +242,20 @@ it('should complete the full checkout flow, validate order modal and my account 
   });
 });
 
+## 🕒 Scheduled GitHub Actions: Cypress Weekly E2E Suite
 
+This repository uses [GitHub Actions](https://github.com/features/actions) to automatically run all Cypress E2E tests once a week.
+
+- **Schedule:** Every Friday at 3:00 PM UTC.
+- **Purpose:** Ensures continuous health-check and regression coverage, even if no code changes are made during the week.
+- **Badge:** The badge above shows the status of the latest scheduled run (green = passing, red = failing).
+
+### How does it work?
+- The workflow installs all dependencies, runs the entire Cypress test suite in headless mode, and archives the latest [Mochawesome](https://github.com/cypress-io/cypress-mochawesome-reporter) HTML reports as build artifacts.
+- You can manually trigger the suite at any time from the “Actions” tab in GitHub.
+- Downloadable test reports are available in the build’s “Artifacts” section after each run.
+
+**This ensures your test automation remains robust, monitored, and easily accessible for your team and stakeholders.**
 ---
 
 ## 💡 Useful Tips
